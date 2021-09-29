@@ -1,4 +1,4 @@
 {
-    "C_Cpp.errorSquiggles": "Enabled",
-    "git.ignoreLimitWarning": true
+  "C_Cpp.errorSquiggles": "Enabled",
+  "git.ignoreLimitWarning": true
 }
