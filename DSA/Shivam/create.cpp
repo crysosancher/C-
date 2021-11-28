@@ -23,7 +23,7 @@ void create(int arr[],int size){
 void Display(){
 	Node *t=first;
 	while(t){
-		cout<<t->Data;
+		cout<<t->Data<<" ";
 		t=t->Next;
 	}
 }
@@ -40,8 +40,11 @@ void reverse(Node *t){
 	first=f;
 	Display();
 }
-void insertAtFirst(Node *t){
-	
+void insertAtFirst(){
+	Node *l=new Node;
+	l->Data=78;
+	l->Next=first;
+	first=l;
 }
 
 
@@ -50,7 +53,8 @@ int main()
 	struct Node *temp;
 	int A[] = {1, 2, 3, 4, 5, 6, 7, 8};
 	create(A, 8);
-	//Display();
+	insertAtFirst();
+	Display();
 	//reverse(first);
 	
 	return 0;
