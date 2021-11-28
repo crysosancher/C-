@@ -21,10 +21,9 @@ void insert(int a[],int size){
 	}
 }
 void display(){
-	Node*temp=first;
-	while(temp){
-		cout<<temp->Data;
-		temp=temp->Next;
+	while(first){
+		cout<<first->Data;
+		first=first->Next;
 	}
 }
 
@@ -33,13 +32,9 @@ int main(){
 	int a[]={1,2,3,4,5};
 	insert(a,5);
 	display();
-	display();
 	
 	
 	
 	return 0;
 
 }
-
-
-
