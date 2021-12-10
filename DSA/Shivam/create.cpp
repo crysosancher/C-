@@ -46,6 +46,28 @@ void insertAtFirst(){
 	l->Next=first;
 	first=l;
 }
+void insertAtLast(){
+	Node *l=new Node;
+	l->Data=99;
+	l->Next=0;
+	Node *y=first;
+	while(y->Next!=0){
+		y=y->Next;
+	}
+	y->Next=l;
+}
+void insertatMid(){
+
+}
+void nodeCount(){
+	Node *c=first;
+	int k=0;
+	while(c){
+		c=c->Next;
+		k++;
+	}
+	cout<<"here are "<<k<<" Nodes";
+}
 
 
 int main()
@@ -53,7 +75,10 @@ int main()
 	struct Node *temp;
 	int A[] = {1, 2, 3, 4, 5, 6, 7, 8};
 	create(A, 8);
-	insertAtFirst();
+	//insertAtFirst();
+	//insertAtLast();
+	//insertatMid();
+	nodeCount();
 	Display();
 	//reverse(first);
 	
