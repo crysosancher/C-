@@ -28,9 +28,10 @@ struct MyStack{
 	}
 	void display(){
 	int k=top;
+	cout<<"OutPut=";
 	for(k;k>-1;k--){
 		cout<<arr[k];
-	}	
+	}cout<<"\n";	
 	}
 };
 int main(){
@@ -39,8 +40,12 @@ int main(){
 	s.push(6);
 	s.push(7);
 	s.push(8);
+	cout<<"Display before pop\n";
+	s.display();
+	cout<<"pop="<<s.pop()<<"\n";
 	//cout<<s.peek();
+	cout<<"Display after pop\n";
 	s.display();
 	cout<<"\n";
-	cout<<s.isEmpty();
+	//cout<<s.isEmpty();
 }
